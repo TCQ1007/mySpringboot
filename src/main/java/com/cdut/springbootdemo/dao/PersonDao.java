@@ -12,6 +12,7 @@ import org.springframework.stereotype.Repository;
 public interface PersonDao {
     Person getById(Integer id);
     void AddPerson(Person person);
+    void selectPerson(String username);
     void DeletePerson(Person person);
 }
 

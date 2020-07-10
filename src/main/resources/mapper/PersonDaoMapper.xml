@@ -7,4 +7,9 @@
         from test
         where id = #{id}
     </select>
+    <select id="selectPerson" resultType="com.cdut.javastudy.entity.Person" parameterType="java.lang.String">
+        select *
+        from person
+        where unsername = #{username}
+    </select>
 </mapper>
